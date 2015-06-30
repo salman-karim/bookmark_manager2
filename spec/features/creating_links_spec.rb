@@ -9,9 +9,12 @@ feature 'Creating links' do
 
     within 'ul#links' do
       expect(page).to have_content('This is ZomboCom')
-
     end
+  end
 
+
+  scenario 'there are no links in the database at the start of the test' do
+    expect(Link.count).to eq 0
   end
 
 end
