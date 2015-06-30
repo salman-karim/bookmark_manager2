@@ -1,6 +1,6 @@
 require 'data_mapper'
 
-DataMapper.setup(:default, "postgres://localhost/bookmark_manager")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/bookmark_manager")
 
 require_relative './models/link'
 
