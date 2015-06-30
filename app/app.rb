@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require './app/app'
 require 'data_mapper'
+require_relative './models/link'
 
 
 class AppWeb < Sinatra::Base
