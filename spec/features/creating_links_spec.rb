@@ -1,3 +1,5 @@
+
+
 feature 'Creating links' do
   scenario 'I can create a new link' do
     visit '/links/new'
